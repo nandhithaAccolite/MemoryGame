@@ -8,11 +8,11 @@ nav {
     text-align:center;
     margin:20px;
     background-color: #05090c; /* Blue color for the background */
-    padding: 10px 20px;
+    //padding: 10px 20px;
   }
   
   h1{
-    margin-left: 500px;
+    margin-left: 470px;
     color:#ecf0f1;
 
   }
@@ -22,6 +22,7 @@ nav {
     font-size: 18px;
     margin-left: 20px;
     transition: color 0.3s;
+    padding-right:20px;
   }
   
   a:hover {
@@ -30,16 +31,21 @@ nav {
 
   .six{
     display: inline-block;
-    margin-top:100px;
-    margin-left: 150px;
+    margin-top:50px;
+    margin-left: 50px;
     text-align: center;
     width:300px;
     height:100px;
   }
+  .bg{
+    display: inline-block;
+    margin-top:100px;
+    margin-left: 120px;
+  }
   .twelve {
     display: inline-block;
     margin-top:100px;
-    margin-left: 290px;
+    margin-left: 100px;
     text-align: center;
     width:300px;
     height:100px;

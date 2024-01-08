@@ -1,0 +1,28 @@
+<nav>
+    <h1>SIX CARDS MEMORY GAME</h1>
+    <a routerLink="/" >HOME</a>
+    <button (click)="resetGame()">Reset Game</button>
+  </nav>
+<div class="card-container">
+    <div class="row">
+      <app-card
+        *ngFor="let card of cardObjects"
+        [frontImage]="'./assets/face.jpg'"
+        [backImage]="card.backImage"
+        (cardClicked)="onCardClicked($event)"
+      ></app-card>
+    </div>
+    <img *ngIf="count==6" src="./assets/win1.jpg" class="centered-image" />
+    <audio *ngIf="count==6" autoplay>
+      <source src="assets/mixkit-ethereal-fairy-win-sound-2019.wav" type="audio/mp3">
+      Your browser does not support the audio tag.
+    </audio>
+    
+  </div>
+
+
+  <div class="scoreboard">
+    <p>Moves: {{ moves }}</p>
+    <p>Misses: {{ misses }}</p>
+    <p>Accuracy: {{getAccuracy()}}%</p>
+  </div>
