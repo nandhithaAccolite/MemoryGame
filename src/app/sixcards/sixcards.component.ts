@@ -71,6 +71,7 @@ export class SixcardsComponent implements AfterViewInit{
   resetGame() {
     // Implement logic to reset the game state
     // For example, reset moves, misses, and card visibility
+    this.count=0;
     this.moves = 0;
     this.misses = 0;
     this.cards.forEach(card => {

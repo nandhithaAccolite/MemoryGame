@@ -9,8 +9,8 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 40%; /* Adjust the width based on your design */
-    margin: 20px auto; /* Center the rows and add some margin */
+    width: 30%; /* Adjust the width based on your design */
+    margin: 30px auto; /* Center the rows and add some margin */
   }
   
   .row app-card {
@@ -74,7 +74,7 @@ body {
     align-items: center; /* Center them vertically */
   }
   h1{
-    margin-left: 350px;
+    margin-left: 500px;
     margin-top:10px;
   }
   a {
@@ -96,5 +96,9 @@ body {
     margin-right:500px;
     height: 50vh;
     width:50vw;
+  }
+  button{
+    height: 40px;
+  font-size: 20px;
   }
   
